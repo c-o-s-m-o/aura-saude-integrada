@@ -194,7 +194,7 @@ export default function Home() {
         <div className="max-w-screen-xl flex flex-wrap justify-center items-center gap-3 mx-auto p-4">
           <a
             href=""
-            className="flex flex-col items-center bg-[#515B28] border border-grenn-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#A3BFA0] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="flex flex-col items-center bg-[#515B28] border border-grenn-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#A3BFA0] "
           >
             <Image
               src={Imagem7}
@@ -202,32 +202,32 @@ export default function Home() {
               className="m-2 object-cover   w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white ">
                 Odontologia
               </h5>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light text-white dark:text-gray-400">
+              <p className="font-light text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light   text-white dark:text-gray-400">
+              <p className="font-light   text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
             </div>
           </a>
           <a
             href=""
-            className="flex flex-col items-center bg-[#515B28] border border-grenn-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#A3BFA0] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="flex flex-col items-center bg-[#515B28] border border-grenn-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#A3BFA0] "
           >
             <Image
               src={Imagem8}
@@ -235,23 +235,23 @@ export default function Home() {
               className="m-2 object-cover   w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white ">
                 Nutrição
               </h5>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Nutricionista esportiva funcional
               </p>
-              <p className="font-light text-white dark:text-gray-400">
+              <p className="font-light text-white ">
                 - Nutricionista clínica
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 -Especialista em modulação intestinal
               </p>
             </div>
           </a>
           <a
             href=""
-            className="flex flex-col items-center bg-[#515B28] border border-grenn-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#A3BFA0] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="flex flex-col items-center bg-[#515B28] border border-grenn-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#A3BFA0] "
           >
             <Image
               src={Imagem9}
@@ -259,32 +259,32 @@ export default function Home() {
               className="m-2 object-cover   w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white ">
                 Estética facial e corporal
               </h5>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light text-white dark:text-gray-400">
+              <p className="font-light text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light   text-white dark:text-gray-400">
+              <p className="font-light   text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
             </div>
           </a>
           <a
             href=""
-            className="flex flex-col items-center bg-[#515B28] border border-grenn-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#A3BFA0] dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="flex flex-col items-center bg-[#515B28] border border-grenn-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#A3BFA0] "
           >
             <Image
               src={Imagem10}
@@ -292,25 +292,25 @@ export default function Home() {
               className="m-2 object-cover   w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-white ">
                 Massoterapia
               </h5>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light text-white dark:text-gray-400">
+              <p className="font-light text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light   text-white dark:text-gray-400">
+              <p className="font-light   text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
-              <p className="font-light  text-white dark:text-gray-400">
+              <p className="font-light  text-white ">
                 - Reconstrução óssea com enxertos
               </p>
             </div>
