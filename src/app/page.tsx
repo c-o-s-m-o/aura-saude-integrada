@@ -1,142 +1,72 @@
 "use client";
 import Image from "next/image";
-import { Alert } from "flowbite-react";
-import { Dropdown, Navbar } from "flowbite-react";
-import Logo from "./../../public/logo.svg";
-import Bacground from "./../../public/backgroud.png";
+
 import Bacground2 from "./../../public/backgroud2.jpg";
 import Bacground3 from "./../../public/backgroud3.png";
 import ImagemPrimeira from "./../../public/capa1.png";
-import Imagem2 from "./../../public/imagem2.png";
-import Imagem3 from "./../../public/imagem3.jpg";
 import Imagem7 from "./../../public/imagem7.jpg";
 import Imagem8 from "./../../public/imagem8.jpg";
 import Imagem9 from "./../../public/imagem9.jpeg";
 import Imagem10 from "./../../public/imagem10.jpg";
-import Imagem12 from "./../../public/imagem12.jpg";
-import Maps from "./../../public/maps.png";
+
+import { Navbarr } from "./components/navbar";
+
+import { useState } from "react";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center  ">
-      <nav className="w-full bg-white border-gray-200 ">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <Image src={Logo} className=" w-20" alt="Flowbite Logo" />
-            <span className=" self-center text-sm font-extralight whitespace-nowrap dark:text-white">
-              ODONTOLOGIA E SAÚDE INTEGRADA
-            </span>
-          </a>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-light text-base flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                  aria-current="page"
-                >
-                  HOME
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  SERVIÇOS
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  REDES SOCIAIS
-                </a>
-              </li>
-              <li className="  ">
-                <a
-                  href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5561982624920%26text%3DOl%25C3%25A1%252C%2Bvim%2Bdo%2BInstagram%252C%2Bgostaria%2Bde%2Bagendar%2Buma%2Bconsulta&e=AT07qGMBJPNArdlTLx0VKlmycofpaNO1eGQPc920CwfMp7y8by2ycoD01gAz3WPhQFuCIAAube1T7DT8yaJYdox_xkrZnRbPH75yj6YN2lwAvwn9"
-                  className=" text-white bg-[#515B28] hover:bg-[#D2B57D] focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-xs px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                >
-                  AGENDAR MINHA CONSULTA
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbarr />
 
-      <div className="w-full relative  bg-center  bg-[#515B28] bg-blend-multiply">
+      <section className="w-full relative  bg-center  bg-[#515B28] bg-blend-multiply">
         <Image
           className="bg-center object-cover blur-sm "
-          src={Bacground}
-          alt="imagem585"
+          src="https://res.cloudinary.com/dtnww1ler/image/upload/v1717428957/cl%C3%ADnica%20aura/background01.png"
+          alt="imagem background 01"
           fill={true}
         />
         <div className="relative max-w-screen-xl flex   items-center justify-evenly mx-auto p-2 ">
           <div className="relative z-1  w-full">
-            <div className="w-full relative flex  overflow-hidden  xl:h-[46rem]">
+            <div className="w-full relative flex flex-col md:flex-row overflow-hidden  xl:h-[46rem] space-y-2 py-8">
               <div className="relative  text-white flex flex-col gap-7">
-                <div className="flex w-full flex-col h-full mx-auto justify-center gap-6 ">
-                  <strong className="font-bold text-6xl">
-                    <p>Aqui a</p>
-                    <p>prioridade</p>
-                    <p>é vocé</p>
-                  </strong>
-                  <strong className="text-base font-medium">
-                    <p>Oferecemos cuidados que elevam sua sáude e beleza.</p>
+                <div className="flex w-full flex-col h-full mx-auto justify-center  text-justify gap-6 ">
+                  <section className="text-center md:text-start gap-6 flex flex-col ">
+                    <strong className="font-bold text-6xl space-y-2 text">
+                      <p>Aqui a</p>
+                      <p>prioridade</p>
+                      <p>é vocé!</p>
+                    </strong>
+                    <strong className="text-sm md:text-base   font-medium">
+                      <p>Oferecemos cuidados que elevam sua sáude e beleza.</p>
 
-                    <p>Seja bem-vindo ao seu novo capítulo de bem-estar</p>
-                    <p>Descubra o seu melhor em cada atendimento</p>
-                  </strong>
+                      <p>Seja bem-vindo ao seu novo capítulo de bem-estar</p>
+                      <p>Descubra o seu melhor em cada atendimento</p>
+                    </strong>
+                  </section>
+
                   <div className=" flex flex-col  items-center gap-4">
-                    <div className="">
+                    <div className="inline-flex w-full">
                       <a
-                        href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5561982624920%26text%3DOl%25C3%25A1%252C%2Bvim%2Bdo%2BInstagram%252C%2Bgostaria%2Bde%2Bagendar%2Buma%2Bconsulta&e=AT07qGMBJPNArdlTLx0VKlmycofpaNO1eGQPc920CwfMp7y8by2ycoD01gAz3WPhQFuCIAAube1T7DT8yaJYdox_xkrZnRbPH75yj6YN2lwAvwn9"
+                        href="https://api.whatsapp.com/send?phone=5561982624920&text=Ol%C3%A1%2C+vim+do+Instagram%2C+gostaria+de+agendar+uma+consulta"
                         type="button"
-                        className=" py-2.5 px-5 me-2 mb-2 text-sm font-medium text-[#515B28] focus:outline-none bg-white   rounded-lg  hover:bg-[#515B28] hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                        className="  w-full py-2.5  text-center mb-2 text-sm font-medium text-[#515B28] focus:outline-none bg-white   rounded-lg  hover:bg-[#515B28] hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-100"
                       >
                         AGENDAR MIMHA CONSULTA
                       </a>
                     </div>
-                    <div
-                      className="inline-flex gap-2 "
-                      
-                    >
+                    <div className="inline-flex gap-2 ">
                       <a
                         className="inline-block w-14 h-14 bg-white rounded-full text-[#515B28] hover:text-white p-2 hover:bg-[#515B28]"
                         href="https://www.instagram.com/clinicaaura.planaltina/"
                       >
                         <svg
-                          className="w-full h-full  dark:text-white"
+                          className="w-full h-full"
                           aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -152,9 +82,12 @@ export default function Home() {
                           />
                         </svg>
                       </a>
-                      <a className="inline-block w-14 h-14 bg-white rounded-full text-[#515B28] hover:text-white p-2 hover:bg-[#515B28]">
+                      <a
+                        className="inline-block w-14 h-14 bg-white rounded-full text-[#515B28] hover:text-white p-2 hover:bg-[#515B28]"
+                        href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5561982624920%26text%3DOl%25C3%25A1%252C%2Bvim%2Bdo%2BInstagram%252C%2Bgostaria%2Bde%2Bagendar%2Buma%2Bconsulta&e=AT1ZdPZaOwprdiSs8-Wqnng80vU1xPEc_tI6i05HMje2RHSFCD_r9wefefztQH6QbzhE2jUacvdShyt_tobFaAY2t17ktNtMI_tJAxiG39f8oRhS"
+                      >
                         <svg
-                          className="w-full h-full  dark:text-white"
+                          className="w-full h-full  "
                           aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -180,7 +113,7 @@ export default function Home() {
               </div>
               <div className="relative  inline-flex justify-center items-center mx-auto  ">
                 <Image
-                  src={ImagemPrimeira}
+                  src="https://res.cloudinary.com/dtnww1ler/image/upload/v1717429018/cl%C3%ADnica%20aura/imagem01.png"
                   className="object-cover "
                   alt={""}
                   width={700}
@@ -190,18 +123,18 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className=" w-full relative bg-[#d1c9e2]">
+      </section>
+      <section className=" w-full relative bg-[#d1c9e2]">
         <Image
-          className="bg-center  object-cover blur-sm"
-          src={Bacground2}
-          alt="imagem58"
+          className="bg-center  object-cover "
+          src="https://res.cloudinary.com/dtnww1ler/image/upload/v1717614154/cl%C3%ADnica%20aura/background02.jpg"
+          alt="imagem background 02"
           fill={true}
         />
         <div className=" relative max-w-screen-xl flex flex-col   mx-auto  h-full  w-full ">
           <div className="relative z-1  w-full">
             <div className="w-full relative z-1 flex     xl:h-[46rem]">
-              <div className="relative z-1 text-[#515B28] flex flex-col gap-7 py-12 px-2">
+              <div className="relative z-1  text-[#515B28] flex flex-col gap-7 py-12 px-2">
                 <strong className="">
                   <h1 className="font-bold text-lg my-2 py-2">
                     Dr. Kendson Davi
@@ -211,21 +144,25 @@ export default function Home() {
                   <h1 className="text-5xl">e de uma forma</h1>
                   <h1 className="text-5xl">segura</h1>
                 </strong>
-                <strong className="font-bold text-lg">
-                  <h1>10 anos ajudando a promover</h1>
-                  <h1>saúde bucal e recontruir sorrisos.</h1>
+                <strong className=" font-bold text-lg pt-4 pb-12 	">
+                  <h1 className="tracking-widest 	drop-shadow-[0_0px_10px_rgba(255,255,255,0.5)]	">
+                    10 anos ajudando a promover
+                  </h1>
+                  <h1 className="tracking-widest 	drop-shadow-[0_0px_10px_rgba(255,255,255,0.5)]">
+                    saúde bucal e recontruir sorrisos.
+                  </h1>
                 </strong>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="w-full bg-[#D2B57D]">
         <div className="max-w-screen-xl flex flex-col   mx-auto p-4">
           <div className="w-full text-lime-950 -translate-y-14">
             <div className="  flex justify-center ">
               <div className="bg-white p-5 rounded-full ">
-                <p className="text-2xl text-[#515B28] font-extralight tracking-widest">
+                <p className="text-center  text-sm md:text-2xl text-[#515B28] font-extralight tracking-widest">
                   Profissionais com{" "}
                   <span className=" font-extrabold">+ de 10 anos</span> de
                   experiência
@@ -233,14 +170,22 @@ export default function Home() {
               </div>
             </div>
           </div>{" "}
-          <div className="w-full flex justify-between items-center text-[#515B28] pb-5 ">
+          <div className="w-full flex flex-col md:flex-row gap-3 justify-between items-center text-[#515B28] pb-5 ">
             <strong>
-              <h1 className="text-6xl  font-bold">Serviços</h1>
+              <h1 className="text-4xl md:text-6xl   font-bold">Serviços</h1>
             </strong>
-            <strong>
+            <strong className="text-justify">
               <h4>Nós acreditamos na qualidade de vida das pessoas.</h4>
-              <h4>por isso, oferecemos atendimentos com profissionais</h4>
-              <h4>qualificados e comprometidos copm a sua saúde</h4>
+              <h4>
+                <span className="font-extralight">
+                  Por isso, oferecemos atendimentos
+                </span>{" "}
+                com profissionais
+              </h4>
+              <h4 className="">
+                qualificados <span className="font-extralight">e</span>
+                comprometidos copm a sua saúde.
+              </h4>
             </strong>
           </div>
         </div>
@@ -376,32 +321,39 @@ export default function Home() {
         <div className="max-w-screen-xl flex flex-col items-center justify-center gap-3 mx-auto p-4 text-white">
           <h1 className="text-4xl font-bold">Nossa Clínica</h1>
           <div className="border h-40 w-1/2 rounded-2xl flex items-center justify-center">
-            <h1 className="text-3xl font-bold">Video apresentação espaço</h1>
+            <h1 className="text-3xl font-bold m-2">
+              Video apresentação espaço
+            </h1>
           </div>
         </div>
       </div>
       <div className="w-full relative ">
         <Image
-          className="bg-center object-cover blur-sm
+          className="bg-center object-cover 
           "
-          src={Bacground3}
-          alt="imagem585"
+          src="https://res.cloudinary.com/dtnww1ler/image/upload/v1717428999/cl%C3%ADnica%20aura/background03.png"
+          alt="imagem fundo"
           fill={true}
         />
 
         <div className=" z-10 relative  max-w-screen-xl flex flex-col items-center justify-center gap-3 mx-auto p-4 text-white">
           <h1 className="text-4xl font-bold">Depoimentos</h1>
           <h1 className="text-4xl font-bold">Instagram</h1>
-          <div className="border h-40 w-1/2 rounded-2xl flex items-center justify-center">
-            <h1 className="text-3xl font-bold">Video apresentação espaço</h1>
+          <div className="border h-40 w-1/2 rounded-2xl flex items-center justify-center ">
+            <h1 className="text-3xl font-bold m-2">Depoimentos do Instagram</h1>
           </div>
           <p className="text-base font-semibold">@clinicaaura.planaltina</p>
         </div>
       </div>
       <div className="w-full bg-[#D2B57D] py-10">
         <div className="max-w-screen-xl flex flex-col items-center justify-center gap-3 mx-auto p-4 text-white">
-          <h1 className="text-4xl font-bold">Onde estamos</h1>
-          <p>Endereço</p>
+          <h1 className="text-4xl font-bold">Onde estamos?</h1>
+          <p> Aura Odontologia e Saúde Integrada</p>
+          <p className="text-justify">
+            Quadra 2, Conjunto A, Lote 40, Setor Residencial Leste - Buritís I Q
+            1 Cl Conjunto, 1 andar - sala 2 - Planaltina, Brasília - DF,
+            73350-201
+          </p>
 
           <div className="w-full  rounded-2xl flex items-center justify-center">
             <iframe
