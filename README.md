@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aura Saúde Integrada
 
-## Getting Started
+Projeto web desenvolvido com Next.js para uma experiência institucional na área de saúde, com foco em apresentação visual moderna, componentes reutilizáveis e responsividade.
 
-First, run the development server:
+## Stack
+
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS 3
+- Flowbite
+- Flowbite React
+
+## Objetivo do projeto
+
+Construir uma presença digital organizada e responsiva para uma proposta de saúde integrada, utilizando um stack moderno de frontend e componentes reutilizáveis.
+
+## Estrutura técnica
+
+O projeto utiliza o App Router do Next.js, TypeScript e Tailwind CSS. O Flowbite é utilizado como apoio para componentes e padrões de interface.
+
+## Execução local
 
 ```bash
+git clone https://github.com/c-o-s-m-o/aura-saude-integrada.git
+cd aura-saude-integrada
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação ficará disponível, por padrão, em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Status
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Este é um projeto de uma etapa anterior do portfólio. O código é preservado como parte da evolução profissional, mas sua documentação anterior ainda era o template padrão do Next.js.
 
-## Learn More
+## Melhorias recomendadas
 
-To learn more about Next.js, take a look at the following resources:
+- atualizar screenshots e identidade visual;
+- documentar páginas e fluxos existentes;
+- revisar dependências para versões atuais quando houver retomada do projeto;
+- adicionar testes;
+- revisar acessibilidade;
+- documentar deploy e ambiente de produção.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## O que este projeto demonstra
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- fundamentos de Next.js e React;
+- TypeScript;
+- Tailwind CSS;
+- uso de biblioteca de componentes;
+- construção de interface responsiva;
+- evolução histórica do portfólio web.
 
-## Deploy on Vercel
+## Autor
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Emanuel Cosmo**
